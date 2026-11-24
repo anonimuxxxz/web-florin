@@ -1,0 +1,2 @@
+import type {MetadataRoute} from "next";import {site} from "@/lib/site";import {services,houses} from "@/lib/data";
+export default function sitemap():MetadataRoute.Sitemap{const routes=["","/servicios","/catalogo","/proyectos","/presupuesto","/contacto"];return [...routes.map(path=>({url:`${site.url}${path}`,lastModified:new Date()})),...services.map(s=>({url:`${site.url}/servicios/${s.slug}`,lastModified:new Date()})),...houses.map(h=>({url:`${site.url}/catalogo/${h.slug}`,lastModified:new Date()}))]}

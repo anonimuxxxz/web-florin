@@ -1,0 +1,1 @@
+export const metadata={title:"Política de cookies"};export default function Page(){return <section className="section"><div className="wrap"><h1>Política de cookies</h1><p>Plantilla pendiente de completar según las cookies y herramientas analíticas que se instalen. Configura el consentimiento antes de activar cookies no esenciales.</p></div></section>}
